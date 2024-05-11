@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "884433033691",
+    "project_id": "calmsphere-login",
+    "storage_bucket": "calmsphere-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884433033691:android:17d26c3aaae586afc2effe",
+        "android_client_info": {
+          "package_name": "com.example.calmshperef1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884433033691-i5d0tk4p59uic4hpjdvqrv44iped14r8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ9uaDZzjkxoEI2Y5rO7TT1qIhZJm-k1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884433033691-i5d0tk4p59uic4hpjdvqrv44iped14r8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884433033691:android:08c71bc992226aa8c2effe",
+        "android_client_info": {
+          "package_name": "com.example.calmsphereapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884433033691-i5d0tk4p59uic4hpjdvqrv44iped14r8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ9uaDZzjkxoEI2Y5rO7TT1qIhZJm-k1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884433033691-i5d0tk4p59uic4hpjdvqrv44iped14r8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

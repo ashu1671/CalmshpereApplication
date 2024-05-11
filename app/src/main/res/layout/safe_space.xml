@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_image" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/basic"
+        android:text="@string/safe_space"
+        android:textColor="#7879F0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/rectangleTActivity"
+        android:layout_width="153dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="348dp"
+        android:background="#39FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <View
+        android:id="@+id/rectangleTActivity1"
+        android:layout_width="153dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="508dp"
+        android:background="#39FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <View
+        android:id="@+id/rectangleTActivityGrief"
+        android:layout_width="153dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="348dp"
+        android:background="#39FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <View
+        android:id="@+id/rectangleTActivity2"
+        android:layout_width="153dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="508dp"
+        android:background="#39FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <View
+        android:id="@+id/rectangleTActivity3"
+        android:layout_width="387dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="2dp"
+        android:background="#F1EBE1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="320dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="-70dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity3"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity3"
+        app:layout_constraintTop_toTopOf="@+id/rectangleTActivity3"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/basic"
+        android:text="@string/calmsphere_s_support_channel"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity3"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity3"
+        app:layout_constraintTop_toTopOf="@+id/rectangleTActivity3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#7879EF"
+        android:text="@string/join_now"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity3"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity3"
+        app:layout_constraintTop_toTopOf="@+id/rectangleTActivity3" />
+
+    <ImageButton
+        android:id="@+id/depressionsprt"
+        android:layout_width="168dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="-160dp"
+        android:src="@drawable/depression_img"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity1"
+        app:layout_constraintHorizontal_bias="0.533"
+        android:contentDescription="Support"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity1"
+        app:layout_constraintTop_toTopOf="@+id/rectangleTActivity1" />
+
+    <ImageButton
+        android:id="@+id/griefsprt"
+        android:layout_width="149dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="-160dp"
+        android:src="@drawable/grief_img"
+        android:contentDescription="grflos"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity2"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity2"
+        app:layout_constraintTop_toTopOf="@+id/rectangleTActivity2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity1"
+        app:layout_constraintTop_toTopOf="@+id/rectangleTActivity1"
+        app:srcCompat="@drawable/bipolar_img" />
+
+    <ImageButton
+        android:id="@+id/anxietysprt"
+        android:layout_width="152dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="35dp"
+        android:contentDescription="Button"
+        android:src="@drawable/anxiety_img"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleTActivity2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity2"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity2" />
+
+    <ImageButton
+        android:id="@+id/bipolarsprt"
+        android:layout_width="153dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/bipolar_img"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleTActivity1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity1"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity1"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="124dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="160dp"
+        android:text="@string/depression_support"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleTActivity1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity1"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity1" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170dp"
+        android:text="@string/grief_loss_support"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleTActivity2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleTActivity2"
+        app:layout_constraintStart_toStartOf="@+id/rectangleTActivity2" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/bipolar_support"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleTActivity1"
+        app:layout_constraintEnd_toEndOf="@+id/bipolarsprt"
+        app:layout_constraintStart_toStartOf="@+id/bipolarsprt" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/anxiety_support"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleTActivity2"
+        app:layout_constraintEnd_toEndOf="@+id/anxietysprt"
+        app:layout_constraintStart_toStartOf="@+id/anxietysprt" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="unlabeled"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

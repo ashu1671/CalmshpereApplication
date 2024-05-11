@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="103dp"
+            android:layout_height="105dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="47dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="36dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile_image" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="91dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/basic"
+            android:text="@string/relax"
+            android:textColor="#7879F0"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="379dp"
+            android:layout_height="247dp"
+            android:layout_marginTop="480dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <WebView
+                    android:id="@+id/webView1"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:padding="50dp">
+                </WebView>
+
+                <WebView
+                    android:id="@+id/webView2"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:padding="50dp">
+
+                </WebView>
+
+                <WebView
+                    android:id="@+id/webView3"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:padding="50dp">
+                </WebView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <VideoView
+            android:id="@+id/PeopleSmiling"
+            android:layout_width="378dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="91dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="55dp"
+            android:text="Trending"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PeopleSmiling" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="752dp"
+            android:text="Explore"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <WebView
+            android:id="@+id/videoView2"
+            android:layout_width="378dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView3" />
+
+        <WebView
+            android:id="@+id/videoView3"
+            android:layout_width="378dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <WebView
+            android:id="@+id/videoView4"
+            android:layout_width="378dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView2" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="379dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/explore_content"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.607"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="unlabeled"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

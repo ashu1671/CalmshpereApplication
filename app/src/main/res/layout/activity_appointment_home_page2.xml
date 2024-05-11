@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@drawable/back_arrow_ios"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022"
+                app:srcCompat="@drawable/back_arrow_ios" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="@drawable/appointment_home_page_pic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/appointment_home_page_pic" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#f3f3f3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.626" />
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="165dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="9dp"-->
+<!--                app:cardCornerRadius="26dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                tools:layout_editor_absoluteY="436dp">-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@drawable/appointmentcards"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:orientation="vertical">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:contentDescription="@drawable/doctoricon"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@drawable/doctoricon"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/LatestDrName"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="-48dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/basic"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:shadowColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="#573926"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="20sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        android:layout_marginStart="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/poppins_semibold"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:shadowColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/ramesh1"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="#573926"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="15sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <View&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/view3"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="3dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginEnd="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="#f3ece3"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:layout_constraintHorizontal_bias="0.0"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:layout_constraintVertical_bias="0.626" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="7dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:contentDescription="@drawable/calender"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@drawable/calender"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/LatestDate"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="-22dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/rubik"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:shadowColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="#707070"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="15sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="200dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="-25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:contentDescription="@drawable/time"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@drawable/time" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/LatestTime"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="235dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="-24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/rubik"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:shadowColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="#707070"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="15sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="118dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="55dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="200dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="-52dp"&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                        android:fontFamily="@font/basic"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:padding="4dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/cancel"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="#FFFFFF"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="16sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textStyle="bold"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        android:translationX="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:translationY="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:backgroundTint="#C82F2F" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/bottom_menu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="start"
+        android:padding="30dp"
+        android:text="&quot; Embark on your journey towards inner peace and well-being with CalmSphere's therapists  &quot;"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonbook" />
+
+    <Button
+        android:id="@+id/buttonbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+
+        android:text="@string/buttonappointment"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nested_scroll_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

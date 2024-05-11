@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timeslots">
+        <item>30 Minutes</item>
+        <item>60 Minutes</item>
+        <item>90 Minutes</item>
+    </string-array>
+</resources>

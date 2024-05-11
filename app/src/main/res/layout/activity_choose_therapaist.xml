@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="25dp">
+
+
+        <View
+            android:id="@+id/viewView"
+            android:layout_width="39dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewUdara"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_doctor_bulk_bil" />
+
+                <LinearLayout
+                    android:layout_width="236dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewDrudara"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dmsansbold"
+                        android:text="Dr. Udara"
+                        android:textSize="15.68sp"
+                        android:translationX="50dp"
+                        android:translationY="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView2Udara"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Jorem ipsum dolor, consectetur adipiscing elit. Nunc v libero et ve."
+                        android:textColor="#858585"
+                        android:textSize="10.45sp"
+                        android:translationX="50dp"
+                        android:translationY="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonudara"
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#7879F1"
+                        android:text="Book"
+                        android:textSize="14sp"
+                        android:translationX="50dp"
+                        android:translationY="15dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStar3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationX="182dp"
+                        android:translationY="-8dp"
+                        app:srcCompat="@drawable/img_frame_orange_500" />
+
+                    <TextView
+                        android:id="@+id/textViewRate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5.0"
+                        android:translationX="202dp"
+                        android:translationY="-24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewPawan2"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_doctor_bulk_bil" />
+
+                <LinearLayout
+                    android:layout_width="236dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewDrramesh"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dmsansbold"
+                        android:text="Dr. Ramesh"
+                        android:textSize="15.68sp"
+                        android:translationX="50dp"
+                        android:translationY="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Jorem ipsum dolor, consectetur adipiscing elit. Nunc v libero et ve."
+                        android:textColor="#858585"
+                        android:textSize="10.45sp"
+                        android:translationX="50dp"
+                        android:translationY="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonramesh"
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#7879F1"
+                        android:text="Book"
+                        android:textSize="14sp"
+                        android:translationX="50dp"
+                        android:translationY="15dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationX="182dp"
+                        android:translationY="-8dp"
+                        app:srcCompat="@drawable/img_frame_orange_500" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5.0"
+                        android:translationX="202dp"
+                        android:translationY="-24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="235dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_doctor_bulk_bil" />
+
+                <LinearLayout
+                    android:layout_width="236dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewDrpawan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dmsansbold"
+                        android:text="Dr. Pawan"
+                        android:textSize="15.68sp"
+                        android:translationX="50dp"
+                        android:translationY="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView2Dr.Pawan"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Jorem ipsum dolor, consectetur adipiscing elit. Nunc v libero et ve."
+                        android:textColor="#858585"
+                        android:textSize="10.45sp"
+                        android:translationX="50dp"
+                        android:translationY="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonpawan"
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#7879F1"
+                        android:text="Book"
+                        android:textSize="14sp"
+                        android:translationX="50dp"
+                        android:translationY="15dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationX="182dp"
+                        android:translationY="-8dp"
+                        app:srcCompat="@drawable/img_frame_orange_500" />
+
+                    <TextView
+                        android:id="@+id/textViewRate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5.0"
+                        android:translationX="202dp"
+                        android:translationY="-24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/urbanistromanextrabold"
+            android:text="Choose Therapist"
+            android:textColor="#7879F1"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewSearch"
+            android:layout_width="353dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="128dp"
+            android:background="@drawable/rectangle_bg_blue_gray_100_4c_radius_8"
+            android:gravity="center_horizontal"
+            app:iconifiedByDefault="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryHint="Search a therapist"
+            app:searchIcon="@drawable/img_frame" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewWanitha"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_doctor_bulk_bil" />
+
+                <LinearLayout
+                    android:layout_width="236dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewWanitha"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dmsansbold"
+                        android:text="Dr. Wanitha"
+                        android:textSize="15.68sp"
+                        android:translationX="50dp"
+                        android:translationY="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView2Wanitha"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Jorem ipsum dolor, consectetur adipiscing elit. Nunc v libero et ve."
+                        android:textColor="#858585"
+                        android:textSize="10.45sp"
+                        android:translationX="50dp"
+                        android:translationY="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonwanitha"
+                        android:layout_width="82dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#7879F1"
+                        android:text="Book"
+                        android:textSize="14sp"
+                        android:translationX="50dp"
+                        android:translationY="15dp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:translationX="182dp"
+                        android:translationY="-8dp"
+                        app:srcCompat="@drawable/img_frame_orange_500" />
+
+                    <TextView
+                        android:id="@+id/textViewRate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5.0"
+                        android:translationX="202dp"
+                        android:translationY="-24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
