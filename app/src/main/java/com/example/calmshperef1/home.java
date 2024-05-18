@@ -400,7 +400,6 @@ public class home extends AppCompatActivity {
 
         private void initializeHome1Views() {
                 setContentView(R.layout.home1);
-
                 ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
                         Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
                         v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -691,38 +690,38 @@ public class home extends AppCompatActivity {
          bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
 
-         // Toast messages for moods
-         buttonHappy.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        // Generate toast message for button2
-        Toast.makeText(home.this, "Button Happy clicked", Toast.LENGTH_SHORT).show();
-        }
-        });
 
-        buttonCalm.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        // Generate toast message for buttonCalm
-        Toast.makeText(home.this, "Button Calm clicked", Toast.LENGTH_SHORT).show();
-        }
-        });
+                // Toast messages for moods
+                buttonHappy.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                // Generate toast message for button2
+                                Toast.makeText(home.this, "Woah You're Happy! Try our chatbot, connect in chatrooms, explore content!", Toast.LENGTH_SHORT).show();
+                        }
+                });
 
-        buttonSad.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        // Generate toast message for buttonSad
-        Toast.makeText(home.this, "Button Sad clicked", Toast.LENGTH_SHORT).show();
-        }
-        });
+                buttonCalm.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                // Generate toast message for buttonCalm
+                                Toast.makeText(home.this, "Glad you're calm! Chatbot for stress, chatrooms for sharing, content for wellness!", Toast.LENGTH_SHORT).show();
+                        }
+                });
 
-        buttonAngry.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        // Generate toast message for buttonAngry
-        Toast.makeText(home.this, "Button Angry clicked", Toast.LENGTH_SHORT).show();
-        }
-        });
+                buttonSad.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                // Generate toast message for buttonSad
+                                Toast.makeText(home.this, "Sorry you're sad.Chatbot for support, chatrooms for connection, content for uplift", Toast.LENGTH_SHORT).show();
+                        }
+                });
+                buttonAngry.setOnClickListener(new View.OnClickListener() {
+                        @Override 
+                        public void onClick(View v) {
+                                // Generate toast message for buttonAngry
+                                Toast.makeText(home.this, "Understand your anger.Chatbot for emotions, chatrooms for support, content for managing!", Toast.LENGTH_SHORT).show();
+                        }
+                });
 
 //For displaying Name
         displaytext = findViewById(R.id.displayname);
@@ -895,96 +894,7 @@ public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
 
 
-//    private void fetchLatestBookingDetails() {
-//        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-//        FirebaseFirestore db = FirebaseFirestore.getInstance();
-//        db.collection("booking")
-//                .whereEqualTo("userId", userId)
-//                .orderBy(FieldPath.documentId(), Query.Direction.DESCENDING)
-//                .limit(1)
-//                .get()
-//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-//                        if (task.isSuccessful()) {
-//                            if (task.getResult().isEmpty()) {
-//                                // No bookings found, switch to home2.xml
-//                                initializeHome2Views();
-//                            } else {
-//                                initializeHome1Views();
-//                                for (QueryDocumentSnapshot document : task.getResult()) {
-//                                    // Retrieve the latest added doctorName, selectedDate, and selectedTime from the document
-//                                    String doctorName = document.getString("doctorName");
-//                                    String selectedDate = document.getString("selectedDate");
-//                                    String selectedTime = document.getString("selectedTime");
-//
-//                                    // Set the values in the respective TextViews
-//                                    TextView doctorNameTextView = findViewById(R.id.LatestDrName);
-//                                    TextView selectedDateTextView = findViewById(R.id.LatestDate);
-//                                    TextView selectedTimeTextView = findViewById(R.id.LatestTime);
-//
-//                                    doctorNameTextView.setText(doctorName);
-//                                    selectedDateTextView.setText(selectedDate);
-//                                    selectedTimeTextView.setText(selectedTime);
-//                                    Log.d(TAG, "done etna", task.getException());
-//                                    Toast.makeText(home.this, "Appointment Updated", Toast.LENGTH_SHORT).show();
-//                                }
-//                            }
-//                        } else {
-//                            Toast.makeText(home.this, "Failed App", Toast.LENGTH_SHORT).show();
-//                            Log.d(TAG, "Error getting documents: 1", task.getException());
-//                        }
-//                    }
-//                });
-//
-//    }
 
-//
-//        private void fetchLatestBookingDetails() {
-//                FirebaseUser currentUser = mauth.getCurrentUser();
-//                if (currentUser != null) {
-//                        String userid = Objects.requireNonNull(mauth.getCurrentUser()).getUid();
-//
-//                        DocumentReference userRef = db.collection("booking").document(userid);
-//                        userRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-//                                @Override
-//                                public void onSuccess(DocumentSnapshot documentSnapshot) {
-//                                        if (documentSnapshot.exists()) {
-//                                                initializeHome1Views();
-//                                                // Document exists, extract user's name
-//                                                String doctorName = documentSnapshot.getString("doctorName");
-//                                                String selectedDate = documentSnapshot.getString("selectedDate");
-//                                                String selectedTime = documentSnapshot.getString("selectedTime");
-//                                                // Display the user's name on the welcomeTextView
-//                                                TextView doctorNameTextView = findViewById(R.id.LatestDrName);
-//                                                TextView selectedDateTextView = findViewById(R.id.LatestDate);
-//                                                TextView selectedTimeTextView = findViewById(R.id.LatestTime);
-//
-//                                                doctorNameTextView.setText(doctorName);
-//                                                selectedDateTextView.setText(selectedDate);
-//                                                selectedTimeTextView.setText(selectedTime);
-//                                                Toast.makeText(home.this, "pass", Toast.LENGTH_SHORT).show();
-//                                        } else {
-//                                                initializeHome2Views();
-//                                                // Document does not exist
-//                                                Log.d(TAG, "No such document1");
-//                                        }
-//                                }
-//                        }).addOnFailureListener(new OnFailureListener() {
-//                                @Override
-//                                public void onFailure(@NonNull Exception e) {
-//                                        // Error retrieving user document
-//                                        Log.e(TAG, "Error getting user document1", e);
-//                                }
-//                        });
-//
-//                } else {
-//                        // Handle the case where the current user is null (not authenticated)
-//                        // For example, display a message to the user or redirect to the login screen
-//                        Log.d(TAG, "Current user is null, authentication required");
-//                        // You may want to navigate back to the login screen or display a message to the user
-//                }
-//        }
 private void fetchLatestBookingDetails() {
         mauth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
