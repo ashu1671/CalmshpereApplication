@@ -14,7 +14,7 @@
 
 ## Use-Cases for the Application
 
-### Empathetic Chatbot:
+### Empathetic Chatbot
 
 
 * CalmSphere features an empathetic chatbot designed to be the first point of contact for users.
